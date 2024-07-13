@@ -10,14 +10,44 @@
   <title>Frontend Mentor | Product list with cart</title>
 </head>
 
-<body>
+<body class="grid">
+  <div class="modal inactive">
+    <div class="modal__container">
+      <div class="modal">
+        <div class="modal__container">
+            <div class="modal__img-container">
+                <img src="./assets/images/icon-order-confirmed.svg" class="modal__img" />
+            </div>
+            <div class="modal__text-container">
+                <h2 class="modal__heading"  > Order Confirmed</h2>
+                <p class="modal__text">We hoop you enjoy your food!</p>
+            </div>
+
+            <div class="modal__prod-container">
+    
+
+            </div>
+
+            <div class="modal__total">
+                <p class="modal__total-text">
+                    Order Total
+                </p>
+                <p class="modal__total-price"></p>
+            </div>
+            <a href="#" class="modal__Button">
+                Start New Order
+            </a>
+        </div>
+    </div>
+    </div>
+  </div>
   <div class="container">
     <h1>Desserts</h1>
     <div class="card-flex">
       <div class="card-item">
         <img src="./assets/images/image-waffle-tablet.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="0" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -34,14 +64,14 @@
         <div class="cards">
           <span class="color-text">Waffle</span>
           <h4>Waffle with Berries</h4>
-          <span class="price"> 6.550</span>
+          <span class="price"> $6.50</span>
         </div>
       </div>
 
       <div class="card-item">
         <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="1" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -67,7 +97,7 @@
       <div class="card-item">
         <img src="./assets/images/image-macaron-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="2" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -94,7 +124,7 @@
       <div class="card-item">
         <img src="./assets/images/image-tiramisu-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="3" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -118,7 +148,7 @@
       <div class="card-item">
         <img src="./assets/images/image-baklava-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="4" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -144,7 +174,7 @@
       <div class="card-item">
         <img src="./assets/images/image-meringue-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="5" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -172,7 +202,7 @@
       <div class="card-item">
         <img src="./assets/images/image-cake-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="6" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -196,7 +226,7 @@
       <div class="card-item">
         <img src="assets\images\image-brownie-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="7" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -222,7 +252,7 @@
       <div class="card-item">
         <img src="\assets\images\image-panna-cotta-desktop.jpg" alt="" width="210">
         <div>
-          <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
+          <button id="8" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"
               viewBox="0 0 21 20">
               <g fill="#C73B0F" clip-path="url(#a)">
                 <path
@@ -245,7 +275,9 @@
       </div>
     </div>
   </div>
-
+  <div class="cart">
+    <h2 class="cart__heading">Your cart (0)</h2>
+  </div>
  
   <script src="app.js"></script>
 </body>
